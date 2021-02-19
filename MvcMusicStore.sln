@@ -30,6 +30,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SqlDocker", "SqlDocker", "{
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{AEC46EB3-1CA1-4CD6-92F8-3FBC88BBC2E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicStore.DiscountEngine.XUnit.UnitTests", "..\MusicStore.DiscountEngine.XUnit.UnitTests\MusicStore.DiscountEngine.XUnit.UnitTests.csproj", "{F256E483-C55D-4A20-9773-ED6F89CB85E4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +66,10 @@ Global
 		{AEC46EB3-1CA1-4CD6-92F8-3FBC88BBC2E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEC46EB3-1CA1-4CD6-92F8-3FBC88BBC2E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEC46EB3-1CA1-4CD6-92F8-3FBC88BBC2E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F256E483-C55D-4A20-9773-ED6F89CB85E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F256E483-C55D-4A20-9773-ED6F89CB85E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F256E483-C55D-4A20-9773-ED6F89CB85E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F256E483-C55D-4A20-9773-ED6F89CB85E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +82,7 @@ Global
 		{11C4CA3B-39B0-4923-83DC-3619F8841876} = {0DD8FF71-2DD3-407F-9BD5-DB7F86600E87}
 		{4A566824-2E60-4B10-8DC6-49BDC0C0EFF2} = {0DD8FF71-2DD3-407F-9BD5-DB7F86600E87}
 		{0173F06D-8D56-4FEE-986F-D7E0BC0F3CFB} = {0DD8FF71-2DD3-407F-9BD5-DB7F86600E87}
+		{F256E483-C55D-4A20-9773-ED6F89CB85E4} = {0DD8FF71-2DD3-407F-9BD5-DB7F86600E87}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2EBC7B68-1F18-4F9A-B043-AAF0EF4E6FFB}
