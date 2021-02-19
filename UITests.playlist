@@ -1,0 +1,1 @@
+<Playlist Version="1.0"><Add Test="UITests.SmokeTestSelenium.selenium_CanAddProductToShoppingBasketAndCheckOutSelenium" /><Add Test="UITests.SmokeTestSelenium.selenium_HomepageContainsProductsSelenium" /></Playlist>

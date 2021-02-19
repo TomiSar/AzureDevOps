@@ -1,0 +1,34 @@
+version: '3.4'
+
+services:
+  mvcmusicstore:
+    ports:
+      - "80"
+    environment:
+      MusicStoreEntities: 'Data Source=db;Initial Catalog=MvcMusicStore;Integrated Security=False;User ID=sa;Password=mypassword123!@;Connect Timeout=60;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False'
+    depends_on:
+      - db
+
+  db:
+    image: marcelv/windowsservercore/sqlserver:1809
+    expose:
+     - "1433"
+    ports:
+     - "1433:1433"
+    environment:
+      ACCEPT_EULA: 'Y'
+      sa_password: 'mypassword123!@'
+ 
+  aspnetdb:
+    image: marcelv/aspnetdb
+    expose:
+     - "1433"
+    ports:
+     - "1434:1433"
+    environment:
+      sa_password: 'mypassword123!@'
+
+networks:
+  default:
+    external:
+      name: nat

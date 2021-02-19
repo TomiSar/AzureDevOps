@@ -1,0 +1,8 @@
+FROM marcelv/windowsservercore/sqlserver:1809
+
+RUN md Data
+COPY aspnetdb.mdf /Data/aspnetdb.mdf
+COPY aspnetdb_log.ldf /Data/aspnetdb_log.ldf
+
+CMD .\start -sa_password $env:sa_password -ACCEPT_EULA Y -attach_dbs \"[{'dbName':'aspnetdb','dbFiles':['C:\\\\data\\\\aspnetdb.mdf','C:\\\\data\\\\aspnetdb_log.ldf']}]\" -Verbose
+
